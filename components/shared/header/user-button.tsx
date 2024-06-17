@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { auth } from '@/auth'
+
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -8,6 +8,8 @@ import {
   DropdownMenuLabel,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+
+import { auth } from '@/auth'
 import { SignOut } from '@/lib/actions/user.actions'
 
 export default async function UserButton() {
