@@ -6,6 +6,8 @@ import { cn } from '@/lib/utils'
 import { Toaster } from '@/components/ui/toaster'
 import React from 'react'
 
+
+
 const fontSans = FontSans({
   subsets: ['latin'],
   weight: ['400', '600'],
@@ -19,9 +21,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode,
+  pathname: string
+
 }>) {
+
+
+
   return (
     <html lang="en">
       <body
@@ -36,3 +44,4 @@ export default function RootLayout({
     </html>
   )
 }
+
