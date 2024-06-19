@@ -9,6 +9,8 @@ import {
 export default async function Home() {
   const latestProducts = await getLatestProducts()
   const featuredProducts = await getFeaturedProducts()
+
+  console.log(featuredProducts)
   return (
     <div>
       {/* {featuredProducts.length > 0 && (
