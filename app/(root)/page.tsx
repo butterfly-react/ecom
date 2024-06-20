@@ -10,13 +10,13 @@ export default async function Home() {
   const latestProducts = await getLatestProducts()
   const featuredProducts = await getFeaturedProducts()
 
-  console.log(featuredProducts)
+
   return (
     <div>
       {/* {featuredProducts.length > 0 && (
         <ProductCarousel data={featuredProducts} />
       )} */}
-      <div className="space-y-8">
+      <div className="space-y-8 flex-1 wrapper h-screen">
         <ProductList title="Newest Arrivals" data={latestProducts} />
       </div>
     </div>

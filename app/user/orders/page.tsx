@@ -27,9 +27,9 @@ export default async function OrdersPage({
     limit: 6,
   })
   return (
-    <div className="space-y-2">
+    <div className="space-y-2 h-screen flex-1 wrapper">
       <h2 className="h2-bold">Orders</h2>
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto ">
         <Table>
           <TableHeader>
             <TableRow>

@@ -34,7 +34,7 @@ export default async function PlaceOrderPage() {
   return (
     <>
       <CheckoutSteps current={3} />
-      <div className="max-w-screen-lg mx-auto px-4">
+      <div className="mx-auto px-4 flex-1 wrapper h-screen">
         <h1 className="py-4 text-2xl">Place Order</h1>
 
         <div className="grid md:grid-cols-3 md:gap-5">
