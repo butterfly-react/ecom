@@ -66,6 +66,8 @@ export default function OrderDetailsForm({
     return status
   }
   const handleCreatePayPalOrder = async () => {
+
+  
     const res = await createPayPalOrder(order.id)
     if (!res.success)
       return toast({

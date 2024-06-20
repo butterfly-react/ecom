@@ -18,7 +18,8 @@ const OrderDetailsPage = async ({
   const session = await auth()
   const order = await getOrderById(id)
   if (!order) notFound()
-  order.user
+
+  
   return (
     <OrderDetailsForm
       order={order}

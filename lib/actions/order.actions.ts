@@ -178,7 +178,9 @@ export async function createPayPalOrder(orderId: string) {
       where: eq(orders.id, orderId),
     })
     if (order) {
+
       const paypalOrder = await paypal.createOrder(Number(order.totalPrice))
+      console.log(paypalOrder)
       await db
         .update(orders)
         .set({
