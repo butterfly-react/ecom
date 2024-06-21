@@ -36,6 +36,8 @@ export const updateUserSchema = updateProfileSchema.extend({
 export const insertProductSchema = createSelectSchema(products, {
   images: z.array(z.string()).min(1, 'Product must have at least one image'),
   stock: z.coerce.number().min(0, 'Stock must be at least 0'),
+  isFeatured: z.boolean().optional().default(false),
+  banner: z.string().optional().nullable(),
 }).omit({
   id: true,
   rating: true,

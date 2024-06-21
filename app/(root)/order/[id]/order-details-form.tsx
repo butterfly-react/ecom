@@ -27,7 +27,7 @@ import {
   deliverOrder,
   updateOrderToPaidByCOD,
 } from '@/lib/actions/order.actions'
-import { useTransition } from 'react'
+import React, { useTransition } from 'react'
 import { Button } from '@/components/ui/button'
 
 export default function OrderDetailsForm({
@@ -129,7 +129,7 @@ export default function OrderDetailsForm({
   }
 
   return (
-    <>
+    <section className='mx-8'>
       <h1 className="py-4 text-2xl"> Order {formatId(order.id)}</h1>
       <div className="grid md:grid-cols-3 md:gap-5">
         <div className="overflow-x-auto md:col-span-2 space-y-4">
@@ -245,6 +245,6 @@ export default function OrderDetailsForm({
           </Card>
         </div>
       </div>
-    </>
+    </section>
   )
 }

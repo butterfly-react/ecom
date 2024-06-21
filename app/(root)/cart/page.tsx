@@ -9,5 +9,10 @@ export const metadata = {
 export default async function CartPage() {
   const cart = await getMyCart()
 
-  return <CartForm cart={cart} />
+  return (
+    <div className="space-y-8 flex-1 wrapper h-screen">
+      <CartForm cart={cart} />
+
+    </div>
+  )
 }

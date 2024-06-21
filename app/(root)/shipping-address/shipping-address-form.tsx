@@ -54,7 +54,7 @@ export default function ShippingAddressForm({
   return (
     <>
       <CheckoutSteps current={1} />
-      <div className="max-w-md mx-auto space-y-4">
+      <div className="max-w-md mx-auto space-y-4 h-screen">
         <h1 className="h2-bold mt-4">Shipping Address</h1>
         <p className="text-sm text-muted-foreground">
           Please enter the address that you want to ship to

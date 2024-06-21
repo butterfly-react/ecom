@@ -37,7 +37,7 @@ const ProductDetails = async ({
   const cart = await getMyCart()
   return (
     <>
-      <section>
+       <div className="space-y-8 flex-1 wrapper h-screen">
         <div className="grid grid-cols-1 md:grid-cols-5">
           <div className="col-span-2">
             <ProductImages images={product.images!} />
@@ -104,7 +104,7 @@ const ProductDetails = async ({
             </Card>
           </div>
         </div>
-      </section>
+      </div>
     </>
   )
 }
