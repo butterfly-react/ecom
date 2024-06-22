@@ -1,5 +1,6 @@
 // import ProductCarousel from '@/components/shared/product/product-carousel'
 
+import ProductCarousel from '@/components/shared/product/product-carousel'
 import ProductList from '@/components/shared/product/product-list'
 import {
   getFeaturedProducts,
@@ -13,9 +14,9 @@ export default async function Home() {
 
   return (
     <div>
-      {/* {featuredProducts.length > 0 && (
+      {featuredProducts.length > 0 && (
         <ProductCarousel data={featuredProducts} />
-      )} */}
+      )}
       <div className="space-y-8 flex-1 wrapper h-screen">
         <ProductList title="Newest Arrivals" data={latestProducts} />
       </div>
