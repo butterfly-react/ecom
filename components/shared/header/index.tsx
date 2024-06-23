@@ -14,6 +14,7 @@ import {
 import { Button } from '@/components/ui/button'
 import { MenuIcon } from 'lucide-react'
 import { getAllCategories } from '@/lib/actions/product.actions'
+import Search from './search'
 
 const Header = async () => {
   const categories = await getAllCategories()
@@ -60,8 +61,14 @@ const Header = async () => {
             {APP_NAME}
           </Link>
         </div>
+        <div className='hidden md:block'>
+          <Search />
+        </div>
         <Menu />
       </div>
+        <div className='md:hidden md:block'>
+          <Search />
+        </div>
     </header>
   )
 }
